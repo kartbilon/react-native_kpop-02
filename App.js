@@ -3,8 +3,8 @@ import { AppLoading } from "expo";
 import { Ionicons } from "@expo/vector-icons";
 import { StyleSheet, Text, View } from "react-native";
 import * as Font from 'expo-font';
-import Tapnavigation from './navigation/Tabnavigation';
-import MainNavigation from "./navigation/MainNavigation";
+import Tabnavigation from './navigation/bottom1';
+import Main from "./navigation/Main";
 
 
 export default class App extends React.Component {
@@ -25,7 +25,7 @@ export default class App extends React.Component {
     const { loaded } = this.state;
     if (loaded) {
       return (
-        <Tapnavigation />
+        <Main />
       );
     } else {
       return (
